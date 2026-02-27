@@ -1,40 +1,67 @@
-<html>
-<style>
-  .1-button{
-    background-color:blue;
-    border-radius:30px;
-    color:white;
-    height:60px;
-    Width:90px;
-    font-family:Comic Sans;
-    font-weight:bold;
-  }
-    .2-button{
-    background-color:blue;
-    border-radius:30px;
-    color:white;
-    height:60px;
-    Width:90px;
-    font-family:Comic Sans;
-    font-weight:bold;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download Center</title>
 
-    .3-button{
-    background-color:blue;
-    border-radius:30px;
-    color:white;
-    height:60px;
-    Width:90px;
-    font-family:Comic Sans;
-    font-weight:bold;
-    }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.download-btn {
+    display: block;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #1e40af;
+}
 </style>
-<button class="1-button">1</button>
-<button class="2-button">2</button>
-<button class="3-button">3</button>
+</head>
+
 <body>
-<a href="document1.pdf">1</a>
-<a href="document2.pdf"><2</a>
-<a href="document3.pdf">3</a>
+
+<h1>📁 Download Files</h1>
+
+<div class="container">
+    <a href="file1.pdf" class="download-btn" download>Download File 1</a>
+    <a href="file2.pdf" class="download-btn" download>Download File 2</a>
+    <a href="file3.pdf" class="download-btn" download>Download File 3</a>
+    <a href="file4.pdf" class="download-btn" download>Download File 4</a>
+    <a href="file5.pdf" class="download-btn" download>Download File 5</a>
+    <a href="file6.pdf" class="download-btn" download>Download File 6</a>
+    <a href="file7.pdf" class="download-btn" download>Download File 7</a>
+    <a href="file8.pdf" class="download-btn" download>Download File 8</a>
+    <a href="file9.pdf" class="download-btn" download>Download File 9</a>
+    <a href="file10.pdf" class="download-btn" download>Download File 10</a>
+</div>
+
 </body>
 </html>
